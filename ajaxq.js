@@ -120,5 +120,9 @@
             }
         }
     };
+
+    $.ajaxq.isQueueEmpty = function (qname) {
+        return $.isEmptyObject(queues[qname]);
+    };
     
 })(jQuery);
