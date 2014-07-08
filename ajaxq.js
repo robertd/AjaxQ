@@ -122,7 +122,7 @@
     };
 
     $.ajaxq.isQueueEmpty = function (qname) {
-        return $.isEmptyObject(queues[qname]);
+        return queues[qname] && $.isEmptyObject(queues[qname]);
     };
     
 })(jQuery);
